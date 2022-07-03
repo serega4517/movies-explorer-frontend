@@ -1,7 +1,11 @@
+import React from 'react';
+
+import Promo from '../Promo/Promo';
+
 const Main = () => {
   return (
-    <h1>О проекте</h1>
+    <Promo />
   )
-}
+};
 
 export default Main;

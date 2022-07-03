@@ -1,12 +1,13 @@
-import "./Register.css";
-import logo from "../../images/logo.svg";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { Link } from "react-router-dom";
+import './Register.css';
+import logo from '../../images/logo.svg';
 
 const Register = () => {
   return (
     <section className="reg">
-      <img className="reg__logo" src={logo} />
+      <img className="reg__logo" src={logo} alt="Logo" />
       <h1 className="reg__title">Добро пожаловать!</h1>
       <form className="reg__form">
         <label className="reg__label">
@@ -40,6 +41,6 @@ const Register = () => {
       </p>
     </section>
   )
-}
+};
 
 export default Register;
