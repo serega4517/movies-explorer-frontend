@@ -33,7 +33,7 @@
 
 .promo__button {
   display: inline-block;
-  margin: 145px 0 85px;
+  margin: 145px 0 74px;
   padding: 10px 20px;
   border: 1px solid #FFFFFF;
   border-radius: 3px;
@@ -117,5 +117,6 @@
 
   .promo__button {
     margin-top: 80px;
+    margin-bottom: 28px;
   }
 }
