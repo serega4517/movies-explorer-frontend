@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-.about-project__title {
+.about-project__heading {
   margin: 0;
   padding-bottom: 23px;
   font-weight: 400;
@@ -43,7 +43,7 @@
 }
 
 .about-project__time-band {
-  padding-bottom: 141px;
+  padding-bottom: 90px;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 4fr;
@@ -103,8 +103,6 @@
     padding-bottom: 70px;
     grid-template-columns: 1.06fr 4fr;
   }
-
-  .about-project__time-band_type_subtitle {}
 }
 
 @media screen and (max-width: 745px) {
@@ -116,7 +114,7 @@
     max-width: calc(100% - 36px);
   }
 
-  .about-project__title {
+  .about-project__heading {
     padding-bottom: 28px;
     font-size: 18px;
     line-height: 22px;
