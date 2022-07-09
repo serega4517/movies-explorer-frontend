@@ -1,6 +1,6 @@
 .techs {
   padding-top: 100px;
- background-color: #272727;
+  background-color: #272727;
 }
 
 .techs__container {
@@ -57,6 +57,10 @@
 }
 
 @media screen and (max-width: 835px) {
+  .techs {
+    padding-top: 92px;
+  }
+
   .techs__container {
     max-width: calc(100% - 100px);
   }
@@ -90,6 +94,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .techs {
+    padding-top: 62px;
+  }
+
   .techs__container {
     max-width: calc(100% - 36px);
   }
