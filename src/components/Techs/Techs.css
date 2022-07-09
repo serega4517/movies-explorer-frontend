@@ -56,13 +56,13 @@
   background-color: #303030;
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 768px) {
   .techs {
     padding-top: 92px;
   }
 
   .techs__container {
-    max-width: calc(100% - 36px);
+    max-width: calc(100% - 100px);
   }
 
   .techs__title {
