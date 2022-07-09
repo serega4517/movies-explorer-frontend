@@ -79,6 +79,12 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .about-me__info {
+    max-width: 425px;
+  }
+}
+
+@media screen and (max-width: 835px) {
   .about-me {
     padding-top: 80px;
   }

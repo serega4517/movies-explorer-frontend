@@ -81,10 +81,6 @@
     padding-top: 92px;
   }
 
-  .about-project__container {
-    max-width: calc(100% - 100px);
-  }
-
   .about-project__info {
     margin-bottom: 88px;
   }
@@ -102,6 +98,12 @@
   .about-project__time-band {
     padding-bottom: 70px;
     grid-template-columns: 1.06fr 4fr;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .about-project__container {
+    max-width: calc(100% - 100px);
   }
 }
 
