@@ -51,6 +51,16 @@
   background-image: url("../../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+  transition: .3s;
+}
+
+.portfolio__project-link:hover {
+  opacity: .6;
+  transform: translateX(5px) translateY(-5px);
+}
+
+.portfolio__project-link:active {
+  opacity: .4;
 }
 
 @media screen and (max-width: 835px) {

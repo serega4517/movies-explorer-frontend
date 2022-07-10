@@ -50,6 +50,15 @@
   line-height: 16px;
   text-decoration: none;
   color: #FFFFFF;
+  transition: .3s;
+}
+
+.footer__link:hover {
+  opacity: .6;
+}
+
+.footer__link:active {
+  opacity: .4;
 }
 
 @media screen and (max-width: 835px) {
