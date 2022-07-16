@@ -10,7 +10,9 @@ const Header = ({ loggedIn }) => {
     <>
     { loggedIn ? (
       <header className="header header_theme_black">
-        <Navigation />
+        <div className="header__container">
+          <Navigation />
+        </div>
       </header>
       ) : (
         <header className="header header_theme_dark-blue">

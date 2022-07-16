@@ -12,7 +12,7 @@ const MoviesCard = ({ title, duration, image }) => {
     let minutes = mins % 60;
 
     return `${ hours }ч ${ minutes }м`;
-  };
+  }
 
   return (
     <div className="movies-card"
@@ -28,7 +28,7 @@ const MoviesCard = ({ title, duration, image }) => {
                   type="button"
                   onClick={() => setIsSaved(!isSaved)}
           />
-        ) }
+        )}
       </div>
     </div>
   )
