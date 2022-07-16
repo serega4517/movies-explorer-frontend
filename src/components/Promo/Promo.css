@@ -1,3 +1,15 @@
+@keyframes spin {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 .promo {
   padding-top: 75px;
   background-color: #073042;
@@ -52,6 +64,10 @@
   border: 1px solid #3DDC84;
   background-position: 0;
   color:#000000;
+}
+
+.promo__img {
+  animation: spin 10s ease-in-out infinite  ;
 }
 
 @media screen and (max-width: 960px) {
