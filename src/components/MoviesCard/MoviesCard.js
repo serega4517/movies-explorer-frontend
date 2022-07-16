@@ -19,7 +19,7 @@ const MoviesCard = ({ title, duration, image }) => {
          onMouseEnter={() => setIsVisible(true)}
          onMouseLeave={() => !isSaved && setIsVisible(false)}
     >
-      <img className="movies-card__image" src={ image } alt="" />
+      <img className="movies-card__image" src={ image } alt="Обложка фильма" />
       <div className="movies-card__info">
         <h2 className="movies-card__title">{ title }</h2>
         <span className="movies-card__duration">{ getTimeFromMins(duration) }</span>

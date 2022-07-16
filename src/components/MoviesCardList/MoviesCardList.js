@@ -11,10 +11,10 @@ const MoviesCardList = ({ movies }) => {
         <ul className="movies-cards__list">
           {movies.map((movie) => (
             <li className="movies-card__item"
-                key={movie.movieId}
+                key={ movie.movieId }
             >
-              <MoviesCard title={movie.nameRU}
-                          duration={movie.duration}
+              <MoviesCard title={ movie.nameRU }
+                          duration={ movie.duration }
                           image={ movie.image }
             />
           </li>

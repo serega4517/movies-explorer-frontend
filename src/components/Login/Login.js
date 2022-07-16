@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <section className="reg">
       <Link to="/">
-        <img className="reg__logo" src={logo} alt="Logo"/>
+        <img className="reg__logo" src={ logo } alt="Logo"/>
       </Link>
       <h1 className="reg__title">Рады видеть!</h1>
       <form className="reg__form">

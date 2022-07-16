@@ -8,7 +8,7 @@ const Register = () => {
   return (
     <section className="reg">
       <Link to="/">
-        <img className="reg__logo" src={logo} alt="Logo"/>
+        <img className="reg__logo" src={ logo } alt="Логотип"/>
       </Link>
       <h1 className="reg__title">Добро пожаловать!</h1>
       <form className="reg__form">

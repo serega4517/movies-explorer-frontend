@@ -18,7 +18,7 @@ const Header = ({ loggedIn }) => {
         <header className="header header_theme_dark-blue">
           <div className="header__container">
             <Link to="/">
-              <img className="header__logo" src={logo} alt="Logo"/>
+              <img className="header__logo" src={ logo } alt="Логотип"/>
             </Link>
             <nav className="header__links">
               <ul className="navigation__links">

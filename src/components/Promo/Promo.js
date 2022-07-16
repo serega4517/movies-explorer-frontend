@@ -12,7 +12,7 @@ const Promo = () => {
           <h2 className="promo__subtitle">Листайте ниже, чтобы узнать больше про этот проект и его создателя.</h2>
           <a className="promo__button" href="#about-project">Узнать больше</a>
         </div>
-        <img className="promo__img" src={promoImg} alt="Planet" />
+        <img className="promo__img" src={promoImg} alt="Изображение планеты из текста" />
       </div>
     </section>
   )

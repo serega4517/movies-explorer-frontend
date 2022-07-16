@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <Link to="/">
-        <img className="navigation__logo" src={logo} alt="Logo"/>
+        <img className="navigation__logo" src={ logo } alt="Логотип"/>
       </Link>
       <div className="navigation__movies-wrapper">
         <ul className="navigation__movies">
@@ -23,7 +23,7 @@ const Navigation = () => {
       </div>
         <Link className="navigation__link navigation__link_type_profile" to="/profile">
           Аккаунт
-          <img className="navigation__profile-icon" src={profileIcon} alt=""/>
+          <img className="navigation__profile-icon" src={ profileIcon } alt="Иконка профиля"/>
         </Link>
     </nav>
   )
