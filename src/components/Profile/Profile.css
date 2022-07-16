@@ -64,19 +64,29 @@
   gap: 16px;
 }
 
-.profile__edit-button {
-  font-weight: 400;
+.profile__button {
   font-size: 13px;
   line-height: 16px;
+}
+
+.profile__button:hover {
+  opacity: .8;
+}
+
+.profile__button:active {
+  opacity: .6;
+}
+
+.profile__edit-button {
+  font-weight: 400;
   background-color: transparent;
   border: none;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .profile__logout-button {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 16px;
   color: #EE3465;
   text-decoration: none;
 }
@@ -93,12 +103,7 @@
     line-height: 15px;
   }
 
-  .profile__edit-button {
-    font-size: 12px;
-    line-height: 15px;
-  }
-
-  .profile__logout-button {
+  .profile__button {
     font-size: 12px;
     line-height: 15px;
   }

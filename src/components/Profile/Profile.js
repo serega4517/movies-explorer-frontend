@@ -36,8 +36,8 @@ const Profile = () => {
             </label>
           </form>
           <div className="profile__buttons">
-            <button className="profile__edit-button" type="button">Редактировать</button>
-            <Link className="profile__logout-button" to="/signin">Выйти из аккаунта</Link>
+            <button className="profile__button profile__edit-button" type="button">Редактировать</button>
+            <Link className="profile__button profile__logout-button" to="/signin">Выйти из аккаунта</Link>
           </div>
         </div>
       </section>
