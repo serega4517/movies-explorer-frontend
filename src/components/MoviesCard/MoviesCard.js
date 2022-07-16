@@ -7,6 +7,13 @@ const MoviesCard = ({ title, duration, image }) => {
   const [isSaved, setIsSaved] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
+  function getTimeFromMins(mins) {
+    let hours = Math.trunc(mins/60);
+    let minutes = mins % 60;
+
+    return `${ hours }ч ${ minutes }м`;
+  };
+
   return (
     <div className="movies-card"
          onMouseEnter={() => setIsVisible(true)}
@@ -15,7 +22,7 @@ const MoviesCard = ({ title, duration, image }) => {
       <img className="movies-card__image" src={ image } alt="" />
       <div className="movies-card__info">
         <h2 className="movies-card__title">{ title }</h2>
-        <span className="movies-card__duration">{ duration }</span>
+        <span className="movies-card__duration">{ getTimeFromMins(duration) }</span>
         { isVisible && (
           <button className={`movies-card__button ${isSaved ? "movies-card__button_checked" : "movies-card__button_unchecked"}`}
                   type="button"

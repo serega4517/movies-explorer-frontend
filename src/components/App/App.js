@@ -7,7 +7,6 @@ import SavedMovies from "../SavedMovies/SavedMovies";
 import Profile from "../Profile/Profile";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
-import Header from "../Header/Header";
 import NotFound from "../NotFound/NotFound";
 
 function App() {
@@ -15,12 +14,10 @@ function App() {
   <div className="page">
     <Switch>
       <Route exact path="/">
-        <Header loggedIn={ false } />
         <Main />
       </Route>
 
       <Route path="/movies">
-        <Header loggedIn={ true } />
         <Movies />
       </Route>
 
