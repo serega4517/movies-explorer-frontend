@@ -7,7 +7,9 @@ import logo from '../../images/logo.svg';
 const Register = () => {
   return (
     <section className="reg">
-      <img className="reg__logo" src={logo} alt="Logo" />
+      <Link to="/">
+        <img className="reg__logo" src={logo} alt="Logo"/>
+      </Link>
       <h1 className="reg__title">Добро пожаловать!</h1>
       <form className="reg__form">
         <label className="reg__label">

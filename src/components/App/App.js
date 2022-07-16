@@ -1,3 +1,4 @@
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Main from "../Main/Main";
@@ -14,11 +15,12 @@ function App() {
   <div className="page">
     <Switch>
       <Route exact path="/">
-        <Header />
+        <Header loggedIn={ false } />
         <Main />
       </Route>
 
       <Route path="/movies">
+        <Header loggedIn={ true } />
         <Movies />
       </Route>
 

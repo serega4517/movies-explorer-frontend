@@ -3,22 +3,35 @@ import { Link } from "react-router-dom";
 
 import './Header.css';
 import logo from '../../images/logo.svg';
+import Navigation from "../Navigation/Navigation";
 
-const Header = () => {
+const Header = ({ loggedIn }) => {
   return (
-    <header className="header">
-      <div className="header__container">
-        <img className="header__logo" src={logo} alt="Logo"/>
-        <nav className="header__nav">
-          <ul className="header__links">
-            <li className="header__link-item">
-              <Link className="header__link" to="/signup">Регистрация</Link>
-              <Link className="header__link header__link_type_login" to="/signin">Войти</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <>
+    { loggedIn ? (
+      <header className="header header_theme_black">
+        <Navigation />
+      </header>
+      ) : (
+        <header className="header header_theme_dark-blue">
+          <div className="header__container">
+            <Link to="/">
+              <img className="header__logo" src={logo} alt="Logo"/>
+            </Link>
+            <nav className="header__links">
+              <ul className="navigation__links">
+                <li className="header__link-item">
+                  <Link className="header__link" to="/signup">Регистрация</Link>
+                </li>
+                <li className="header__link-item">
+                  <Link className="header__link header__link_type_login" to="/signin">Войти</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      )}
+    </>
   )
 }
 
