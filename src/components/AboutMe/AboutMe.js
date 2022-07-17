@@ -17,10 +17,10 @@ const AboutMe = () => {
               После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
             <ul className="about-me__links">
               <li className="about-me__link-item">
-                <a className="about-me__link" href="#">Facebook</a>
+                <a className="about-me__link" href="https://facebook.com" target="_blank">Facebook</a>
               </li>
               <li className="about-me__link-item">
-                <a className="about-me__link" href="#">Github</a>
+                <a className="about-me__link" href="https://github.com/serega4517" target="_blank">Github</a>
               </li>
             </ul>
           </div>

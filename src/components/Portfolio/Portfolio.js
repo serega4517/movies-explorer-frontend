@@ -10,15 +10,15 @@ const Portfolio = () => {
         <ul className="portfolio__projects">
           <li className="portfolio__project-item">
             <p className="portfolio__project">Статичный сайт</p>
-            <a className="portfolio__project-link" href="#" target="_blank" />
+            <a className="portfolio__project-link" href="https://serega4517.github.io/how-to-learn/" target="_blank" />
           </li>
           <li className="portfolio__project-item">
             <p className="portfolio__project">Адаптивный сайт</p>
-            <a className="portfolio__project-link" href="#" target="_blank" />
+            <a className="portfolio__project-link" href="https://serega4517.github.io/russian-travel/" target="_blank" />
           </li>
           <li className="portfolio__project-item">
             <p className="portfolio__project">Одностраничное приложение</p>
-            <a className="portfolio__project-link" href="#" target="_blank" />
+            <a className="portfolio__project-link" href="https://serega4517.github.io/mesto/" target="_blank" />
           </li>
         </ul>
       </div>
