@@ -56,10 +56,12 @@
   opacity: .6;
 }
 
-/*@media screen and (max-width: 370px) {*/
+@media screen and (max-width: 768px) {
+  .navigation__movies {
+    display: none;
+  }
 
-/*  .navigation__link {*/
-/*    font-size: 10px;*/
-/*    line-height: 160%;*/
-/*  }*/
-/*}*/
+  .navigation__link {
+    display: none;
+  }
+}

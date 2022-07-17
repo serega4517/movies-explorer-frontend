@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import './Navigation.css';
+
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
+
 import profileIcon from '../../images/icon__profile.svg'
 import logo from "../../images/logo.svg";
 
@@ -25,6 +28,7 @@ const Navigation = () => {
           Аккаунт
           <img className="navigation__profile-icon" src={ profileIcon } alt="Иконка профиля"/>
         </Link>
+      <BurgerMenu />
     </nav>
   )
 }
