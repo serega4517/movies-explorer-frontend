@@ -3,15 +3,25 @@ import { useState } from "react";
 
 import './MoviesCard.css';
 
-const MoviesCard = ({ title, duration, image }) => {
+const MoviesCard = ({ title, duration, image, isSavedFilmsPage }) => {
   const [isSaved, setIsSaved] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  function getTimeFromMins(mins) {
+  const getTimeFromMins = (mins) => {
     let hours = Math.trunc(mins/60);
     let minutes = mins % 60;
 
     return `${ hours }ч ${ minutes }м`;
+  }
+
+  // С кнопкой сохранения фильмов и удаления с сохраненных получился какой-то костыль, как мне кажется :)
+  // Но пока другого варианта не придумал как это реализовать
+  const toggleButton = (page) => {
+    if (!page) {
+      return `movies-card__button ${isSaved ? "movies-card__button_checked" : "movies-card__button_unchecked"}`
+    } else {
+      return "movies-card__button movies-card__button_delete"
+    }
   }
 
   return (
@@ -24,7 +34,7 @@ const MoviesCard = ({ title, duration, image }) => {
         <h2 className="movies-card__title">{ title }</h2>
         <span className="movies-card__duration">{ getTimeFromMins(duration) }</span>
         { isVisible && (
-          <button className={`movies-card__button ${isSaved ? "movies-card__button_checked" : "movies-card__button_unchecked"}`}
+          <button className={toggleButton(isSavedFilmsPage)}
                   type="button"
                   onClick={() => setIsSaved(!isSaved)}
           />

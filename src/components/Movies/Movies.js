@@ -12,7 +12,9 @@ const Movies = () => {
     <>
       <Header loggedIn={ true } />
       <SearchForm />
-      <MoviesCardList movies={ movies } />
+      <MoviesCardList movies={ movies }
+                      isSavedFilmsPage={ false }
+      />
       <Footer />
     </>
   )

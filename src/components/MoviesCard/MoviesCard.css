@@ -72,3 +72,14 @@
   background-repeat: no-repeat;
 }
 
+.movies-card__button_delete {
+  padding: 10.5px;
+  background-image: url("../../images/delete-movie-button.svg");
+  background-position: center;
+  width: 8px;
+  height: 8px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: #313131;
+}
+

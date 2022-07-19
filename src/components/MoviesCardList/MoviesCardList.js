@@ -4,7 +4,7 @@ import './MoviesCardList.css';
 
 import MoviesCard from '../MoviesCard/MoviesCard';
 
-const MoviesCardList = ({ movies }) => {
+const MoviesCardList = ({ movies, isSavedFilmsPage }) => {
   return (
     <section className="movies-cards">
       <div className="movies-cards__container">
@@ -16,6 +16,7 @@ const MoviesCardList = ({ movies }) => {
               <MoviesCard title={ movie.nameRU }
                           duration={ movie.duration }
                           image={ movie.image }
+                          isSavedFilmsPage={ isSavedFilmsPage }
             />
           </li>
           ))}
