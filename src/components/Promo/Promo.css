@@ -67,7 +67,7 @@
 }
 
 .promo__img {
-  animation: spin 10s ease-in-out infinite  ;
+  animation: spin 7s ease-in-out infinite  ;
 }
 
 @media screen and (max-width: 960px) {

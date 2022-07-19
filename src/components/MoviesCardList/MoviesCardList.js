@@ -22,10 +22,11 @@ const MoviesCardList = ({ movies, isSavedFilmsPage }) => {
           ))}
         </ul>
       </div>
-
-      <div className="movies-cards__button-wrapper">
-        <button className="movies-cards__button">Ещё</button>
-      </div>
+      { !isSavedFilmsPage && (
+        <div className="movies-cards__button-wrapper">
+          <button className="movies-cards__button">Ещё</button>
+        </div>
+      )}
     </section>
   )
 }
