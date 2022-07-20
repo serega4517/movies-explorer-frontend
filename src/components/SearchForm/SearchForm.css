@@ -20,6 +20,11 @@
   outline: none;
   border: none;
   border-bottom: 1px solid #424242;
+  transition: .3s ease-in-out;
+}
+
+.search-form__input:focus {
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .search-form__button {
