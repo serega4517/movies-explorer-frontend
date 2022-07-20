@@ -10,7 +10,11 @@ const SearchForm = () => {
         <a className="search-form__button" href="#" />
       </div>
       <div className="search-form__checkbox-container">
-        <input className="search-form__checkbox" type="checkbox" id="switch"/>
+        <input className="search-form__checkbox"
+               type="checkbox"
+               id="switch"
+               required
+        />
         <label className="search-form__checkbox_type_toggle" htmlFor="switch" />
         <p className="search-form__checkbox-name">Короткометражки</p>
       </div>
