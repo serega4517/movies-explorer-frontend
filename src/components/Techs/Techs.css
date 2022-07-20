@@ -96,6 +96,7 @@
 @media screen and (max-width: 480px) {
   .techs {
     padding-top: 62px;
+    background-color: #202020;
   }
 
   .techs__container {
