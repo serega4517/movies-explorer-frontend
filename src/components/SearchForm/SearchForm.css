@@ -38,14 +38,15 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
   transition: .5s;
 }
 
 .search-form__button::before {
   content: '';
   position: absolute;
-  top: 13px;
-  right: 14px;
+  top: 11px;
+  right: 12px;
   width: 7px;
   height: 7px;
   border-top: 2px solid #fff;
@@ -62,8 +63,8 @@
 .search-form__button::after {
   content: '';
   position: absolute;
-  top: 13px;
-  left: -59px;
+  top: 11px;
+  left: -61px;
   width: 7px;
   height: 7px;
   border-top: 2px solid #fff;
