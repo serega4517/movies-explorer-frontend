@@ -2,6 +2,8 @@ import React from "react";
 
 import './Portfolio.css';
 
+import linkIcon from '../../images/arrow.svg';
+
 const Portfolio = () => {
   return (
     <section className="portfolio">
@@ -9,16 +11,22 @@ const Portfolio = () => {
         <h2 className="portfolio__heading">Портфолио</h2>
         <ul className="portfolio__projects">
           <li className="portfolio__project-item">
-            <p className="portfolio__project">Статичный сайт</p>
-            <a className="portfolio__project-link" href="https://serega4517.github.io/how-to-learn/" target="_blank" />
+            <a className="portfolio__project-link" href="https://serega4517.github.io/how-to-learn/" target="_blank">
+              Статичный сайт
+              <img className="portfolio__project-link-icon" src={linkIcon}/>
+            </a>
           </li>
           <li className="portfolio__project-item">
-            <p className="portfolio__project">Адаптивный сайт</p>
-            <a className="portfolio__project-link" href="https://serega4517.github.io/russian-travel/" target="_blank" />
+            <a className="portfolio__project-link" href="https://serega4517.github.io/how-to-learn/" target="_blank">
+              Адаптивный сайт
+              <img className="portfolio__project-link-icon" src={linkIcon}/>
+            </a>
           </li>
           <li className="portfolio__project-item">
-            <p className="portfolio__project">Одностраничное приложение</p>
-            <a className="portfolio__project-link" href="https://serega4517.github.io/mesto/" target="_blank" />
+            <a className="portfolio__project-link" href="https://serega4517.github.io/how-to-learn/" target="_blank">
+              Одностраничное приложение
+              <img className="portfolio__project-link-icon" src={linkIcon}/>
+            </a>
           </li>
         </ul>
       </div>
