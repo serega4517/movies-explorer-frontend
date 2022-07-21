@@ -11,10 +11,12 @@ const Movies = () => {
   return (
     <>
       <Header loggedIn={ true } />
-      <SearchForm />
-      <MoviesCardList movies={ movies }
-                      isSavedFilmsPage={ false }
-      />
+      <main className="main">
+        <SearchForm />
+        <MoviesCardList movies={ movies }
+                        isSavedFilmsPage={ false }
+        />
+      </main>
       <Footer />
     </>
   )

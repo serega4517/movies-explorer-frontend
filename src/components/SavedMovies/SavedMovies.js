@@ -12,13 +12,15 @@ import { savedMovies } from "../../utils/movies";
 const SavedMovies = () => {
   return (
     <>
-      <section className="saved-movies">
-        <Header loggedIn={ true } />
-        <SearchForm />
-        <MoviesCardList movies={ savedMovies }
-                        isSavedFilmsPage={ true }
-        />
-      </section>
+      <Header loggedIn={ true } />
+      <main className="main">
+        <section className="saved-movies">
+          <SearchForm />
+          <MoviesCardList movies={ savedMovies }
+                          isSavedFilmsPage={ true }
+          />
+        </section>
+      </main>
       <Footer />
     </>
   )
